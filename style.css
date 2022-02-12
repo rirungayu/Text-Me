@@ -1,0 +1,189 @@
+body {
+  background-color: burlywood;
+  overflow: hidden;
+}
+
+button {
+  border-radius: 10px;
+  border-width: 1px;
+  font-size: medium;
+  font-family: "Dongle", sans-serif;
+  width: max-content;
+  background-color: lightcoral;
+}
+
+.input {
+  border-radius: 7px;
+  border-width: 2px;
+  font-size: medium;
+  font-family: "Saira", sans-serif;
+}
+
+.label {
+  font-size: xx-large;
+  font-family: "Dongle", sans-serif;
+  border-radius: 5px;
+  border-width: 5px;
+}
+
+.flex {
+  display: flex;
+}
+
+.login {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  margin-bottom: 20px;
+}
+
+.main {
+  margin: 50px;
+  visibility: hidden;
+  height: 100vh;
+}
+
+.main.show {
+  visibility: visible;
+}
+
+.left {
+  width: 50%;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Alfa Slab One", sans-serif;
+}
+
+.right {
+  margin-left: 70px;
+}
+
+.messages {
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.hugs {
+  background-color: beige;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 5px;
+}
+.message {
+  padding: 5px;
+  padding-left: 10px;
+  margin: 5px;
+}
+.sender {
+  font-style: italic;
+  font-weight: bold;
+}
+.received {
+  background-color: beige;
+  align-items: flex-end;
+}
+
+.sent {
+  background-color: palegreen;
+  text-align: end;
+}
+.new_message {
+  resize: none;
+}
+.send_button {
+  position: absolute;
+  right: 0;
+}
+
+.hug_button {
+  width: 100px;
+  height: 100px;
+  margin-left: 15px;
+  background-color: white;
+  border-color: white;
+}
+
+.enter_button {
+  width: 50px;
+  height: 30px;
+  font-size: large;
+}
+
+.logo_label {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.login {
+  visibility: visible;
+}
+
+.login.hide {
+  visibility: hidden;
+}
+
+.toast {
+  visibility: hidden;
+  background-color: rgba(51, 51, 51, 0.534);
+  min-width: 250px;
+  margin-left: -125px;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+}
+.toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

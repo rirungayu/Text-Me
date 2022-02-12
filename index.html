@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dongle"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Alfa Slab One"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Saira"
+    />
+  </head>
+
+  <body>
+    <nav class="login">
+      <label class="label logo_label">TextMe </label>
+      <label class="label login_label"
+        >Log in to see what your friends have sent you!
+      </label>
+      <label> 🥰🥰🥰🥰🥰 </label>
+      <input class="input username" type="text" placeholder="username" />
+      <input class="input password" type="password" placeholder="password" />
+      <button class="enter_button login_button">&rarr;</button>
+    </nav>
+    <div class="main flex">
+      <div class="left">
+        <div class="title">MY MESSAGES</div>
+        <div class="messages"></div>
+      </div>
+
+      <div class="right">
+        <div class="title">WRITE MESSAGE</div>
+        <div>
+          <div>
+            <label class="label">TO: </label>
+            <select class="message_user_select selector"></select>
+          </div>
+          <div>
+            <textarea
+              class="new_message_input input"
+              placeholder="write message (100 character limit)"
+              type="text"
+              maxlength="100"
+              cols="40"
+              rows="4"
+            ></textarea>
+            <button class="enter_button send_message">&rarr;</button>
+          </div>
+        </div>
+        <div class="hugs">
+          <label class="label">Send a hug ❤</label>
+          <div class="flex">
+            <div>
+              <label class="label">TO: </label>
+              <select class="hug_user_select selector"></select>
+            </div>
+            <button class="hug_button">
+              <img src="hug.jpg" width="90px" height="90px" />
+            </button>
+          </div>
+        </div>
+        <div><button class="logoutButton">LOG OUT</button></div>
+      </div>
+    </div>
+    <div class="toast label"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
